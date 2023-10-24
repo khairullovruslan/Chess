@@ -16,7 +16,7 @@ public class Board {
     public static   void printBoard() {
         System.out.println("  1   2   3   4   5   6   7   8 ");
         for (int i = 0; i < gameBoard.length; ++i) {
-            System.out.print("" + (i + 1) + " ");
+            System.out.print((i + 1) + " ");
             for (int j = 0; j < gameBoard[i].length; ++j) {
                 switch (gameBoard[i][j]) {
                     case (1):

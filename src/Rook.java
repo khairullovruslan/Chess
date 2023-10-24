@@ -52,11 +52,7 @@ public class Rook extends BasicFigure{
 
         }
 
-        if (Board.gameBoard[col][row] * this.color >= 0){
-            return true;
-        }
-        return false;
-
+        return Board.gameBoard[col][row] * this.color >= 0;
 
 
     }

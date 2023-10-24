@@ -15,15 +15,9 @@ public class Pawn extends BasicFigure {
                 return false;
             }
             if (row == this.row){
-                if (Board.gameBoard[col][row] == 0) {
-                    return true;
-                }
+                return Board.gameBoard[col][row] == 0;
             }
-            else if ((Math.abs(this.row - row) <= 1)  && (Board.gameBoard[col][row]  > 0) ){
-                return true;
-
-            }
-            return false;
+            else return (Math.abs(this.row - row) <= 1) && (Board.gameBoard[col][row] > 0);
         }
 
 
@@ -33,15 +27,9 @@ public class Pawn extends BasicFigure {
                 return false;
             }
             if (row == this.row){
-                if (Board.gameBoard[col][row] == 0) {
-                    return true;
-                }
+                return Board.gameBoard[col][row] == 0;
             }
-            else if ((Math.abs(this.row - row) == 1)  && (Board.gameBoard[col][row]  < 0) ){
-                return true;
-
-            }
-            return false;
+            else return (Math.abs(this.row - row) == 1) && (Board.gameBoard[col][row] < 0);
         }
         return false;
     }
